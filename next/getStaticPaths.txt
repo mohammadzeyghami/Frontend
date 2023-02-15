@@ -50,3 +50,20 @@ useRouter
             items
         )
     }
+
+revalidate 
+
+    cosnt paths = data.map((item)=>{
+        return {
+            params:{
+                postId:`${item.id}`
+            }
+            revalidate:10
+        }
+    })
+
+        with revalidate : ma mitonim meghdar dataii k az biron migirim ro ba in update konim 
+        1- zamani k revalidate ro mizarim ro 10 sec on time k client req mide baz az har 10 sec
+        re-generetaion etefagh miofte va mahsol update mishe 
+
+        !! htmn byd reqi dade she khod be khod amal nmikone 
