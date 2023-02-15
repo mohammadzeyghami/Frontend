@@ -6,3 +6,14 @@ what is getStaticProps
 
     getStaticProps always must on pages you cnt use this on components becaus you cnt send that 
     to server side 
+
+
+    pre-render :  
+
+        zamani k shoma project ro build mikonin data ha be 3 type file build mishan 
+
+        1- html : data haii k niaz be data khareji ndrn 
+
+        2- js : function haii k data haie khareji ro bahashon to html handel mikonim
+
+        3- json : hamon data haii k external hastn 
