@@ -1,0 +1,52 @@
+what is StaticPaths ? 
+
+when you create paths you can create dynamic paths with [name] 
+
+next pre-render files and send they to server side but what can do  when you dont know 
+homw many path do you have ???
+
+getStaticPaths give all path route pages to next and next create that pages with getStaticProps 
+
+
+in this time  staticpaths solved this problem 
+    you doint this :
+
+export async function getStaticPaths() {
+    const response = await fetch (url)
+    data = response.json()
+
+    cosnt paths = data.map((item)=>{
+        return {
+            params:{
+                postId:`${item.id}`
+            }
+        }
+    })
+}
+
+here next create html- js - json pages   
+
+
+
+what is fallback do ? 
+
+    fallback : false give us page 404 eror if next dont find that path route 
+
+    fallback : block this is smae with true jsut here page is loading (hamishe age lazem dashtim ro ture mziarim age nashod ro block mizarimesh)
+
+    fallback : true  your chroume send a req to server and fetch json and on this time create html file 
+    to create new page but its take time so you need loading  with useRouter you Handel That 
+
+useRouter 
+
+    you import {useRouter} from "next/router"
+
+    const router = useRouter()
+
+    if (router.isFallback){
+        return <h1>Loading...</h1>
+
+        return(
+            items
+        )
+    }
