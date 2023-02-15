@@ -1,0 +1,8 @@
+what is getStaticProps 
+
+    get staticProps run in server side and that never render on client side 
+
+    getStaticProps are runing earlyer than your code 
+
+    getStaticProps always must on pages you cnt use this on components becaus you cnt send that 
+    to server side 
