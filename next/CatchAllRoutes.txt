@@ -1,0 +1,33 @@
+how get all reoutes 
+
+
+docs 
+    [...name].js
+    
+    az in file be bad har adresi beri in address miad bala
+
+
+how use this in + 
+
+    import {useRouter} from "next/router"
+
+    cosnt simpel = () =>{
+        const router = useRouter();
+        const {params=[]} = router.query   =[] ba in onaro ro araye mizarim hala mishe condition dad beheshon
+
+        if(params===2){
+
+            return(
+                <h1>
+                    {`this is one of benefits ${params[0]}  you can see${params[2]}`}
+                </h1>
+
+            )
+        }
+        
+    }
+
+
+    !!  you never can acsess solid /name         localhost/3000/name    is must contain localhost/3000/name/something
+
+    !!for fixing that you msut put [...name]    inside another brackets [[...name]]
