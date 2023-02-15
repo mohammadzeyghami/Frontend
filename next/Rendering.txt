@@ -1,0 +1,11 @@
+Pre-Rendering
+
+static generation
+server side rendering
+
+
+static generation :  (without Data)  = inja zamani k ma project ro build mikonim datas be html pages tabdil mishan 
+    va be server ferestade mishan. !! zamani k project to faze developer bade az har update pre render mishe.
+
+
+

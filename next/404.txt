@@ -1,0 +1,4 @@
+for this you only need create 404.js inside pages diractory 
+
+and put every thing you want 
+
