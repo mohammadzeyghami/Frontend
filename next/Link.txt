@@ -1,0 +1,12 @@
+How Links worked 
+
+
+    first you must import this next component 
+
+    <Link href="/adress">
+        something
+    </Link>
+
+
+    !!this component use in clientSide routing if you want to navigate side you msut 
+    using a tag
