@@ -1,0 +1,16 @@
+getServerSideProps : 
+
+
+
+in function etelaat ro migire ba har req mifreste samt server onja render mikone (html mikone) 
+va on page ro ersal mikone be client side  zamane bishtary migire 
+
+
+
+
+only run in server side
+
+its not be on data bandels js sending to serverside
+you can write serverside codes directly in getServerSideProps
+getServerSideProps htmn byd to page neveshte she na to components
+hatmn byd props return kone va props byd object bashe

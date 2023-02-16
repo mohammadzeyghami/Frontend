@@ -1,0 +1,3 @@
+in this way of build your ssr page when you start build project dont have html and json file 
+
+before build and after build  caus build this page on server side

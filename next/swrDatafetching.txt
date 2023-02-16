@@ -1,0 +1,20 @@
+isntall swr 
+import useSwr from "swr"
+
+const fetcher = async ()=> {
+    const response = await fetch("url")
+    const data = response.json()
+
+    return data
+} 
+
+export const DashboardSwr = () =>{
+    const {data,error}=useSwr("dashboard",fetcher)   in dashboard uniqkey  vase reqe
+    if(error) return "an error has occured"
+    if (!data) return "Loading"            
+    return(
+        
+        items
+     
+    )
+} 
