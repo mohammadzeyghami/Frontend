@@ -1,5 +1,17 @@
  static Generation build :  
 
+       1-zamane build html ha tolid mishan 
+
+       2- page haye dynamic ba fallback:ture  zamane build generate nmishan 
+       zamane request generetaion etefagh mifote
+
+       3- revalidation : page haye dynamic bad az req zamane revalidate ro separi mikonan
+       va har bar regeneration mishan
+
+
+
+
+
         zamani k shoma project ro build mikonin data ha be 3 type file build mishan 
 
         1- html : data haii k niaz be data khareji ndrn 
