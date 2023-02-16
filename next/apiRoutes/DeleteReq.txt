@@ -1,0 +1,29 @@
+1 - create your dynamic route 
+
+import {comments} from ""
+
+
+    export default function handler(req,res){
+        const {commentId} = req.query
+        const comment = comments.find(comment => comment.id === commentId)
+        res.status(200).json(comment)
+    }
+ 
+
+ const deleteComment = async(commentId)=>{
+    const response = await fetch(`/api/comments/${commentId}`){
+        method :"DELETE"
+    }
+    const data = await response.json()
+    fetchComments()
+ }
+
+
+         }elseif(req.method==="Delete"){
+            const index = comments.find(
+            (comment)=> comment.id === parseInt(commentId)
+        )
+
+        comments.splice(index,1)
+
+        res.status(200).json(deletedComent)

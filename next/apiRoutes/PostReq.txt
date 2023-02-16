@@ -1,0 +1,48 @@
+you create your state like 
+
+
+const [comment , setComment] = useState("")
+
+
+
+const submitHandler = async()=>{
+    const response= await fetch(url)
+        method : "Post",
+        body:JSON.strangify({comment})
+        headers :{
+            "Content-type":"application/json"
+        }
+        const data = await response.json()
+   
+}
+
+
+
+
+<input onChange={()=>setComment(e.target.value)} value={comment}  />
+<button onClick=(()=>submitHandler())/>
+
+
+
+
+
+inside api route 
+
+
+
+const Function=async()=>{
+    if(req.method==="Get"){
+        const response = await fetch("comment api route")
+    }elseif(req.method==="Post"){
+        const comment = req.body.comment
+        const newComment = {
+             id:date.now() , 
+             name:comment
+        }
+        comments.push(newComment)
+        res.status(201).json(newComment)
+    }
+    
+  
+
+}
