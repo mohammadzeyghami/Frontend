@@ -1,0 +1,8 @@
+api Routes : 
+ye function e ke ba response o request dare aln age b in route api biam data ro response 
+migirim
+
+const handler = (req, res) =>{
+
+    res.status(200).json(data)   
+} 

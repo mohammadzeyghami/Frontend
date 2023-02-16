@@ -18,3 +18,7 @@ export const DashboardSwr = () =>{
      
     )
 } 
+
+
++benefits swr vs useEffect  ba update shodan data khodesh update mishe kolln swr samte vase fetch 
+data samte client kheili mofide 
