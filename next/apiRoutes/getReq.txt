@@ -1,0 +1,32 @@
+
+
+1- create file data  
+
+2- inside data create data   &  on that create some data  
+
+const data = [{ name:"mohammad"},{ name:"ali"},{ name:"shayan"}]
+
+
+3- now inside routes api create file comments 
+
+    inside comments create js file 
+
+
+
+    import {datas} from "addres"
+    const comments = (res,req)=>{
+        res.status(200).json(datas)
+    } 
+
+
+
+
+now in front end side create function and send get req 
+
+
+const getFunction=async()=>{
+
+    const response = await fetch("comment api route")
+    const data = response.json()
+
+}
