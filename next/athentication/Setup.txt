@@ -1,6 +1,6 @@
 1- install package npm i next-auth 
 
-2- create dynamic root [...nextauth]
+2- create dynamic root in api  [...nextauth]
 
     import nextAuth from "next-auth"
     import providers from "next-auth/providers"
@@ -14,4 +14,8 @@
         ]
     })
 
-3- login github acount
+3- login github acount go settings / developer settings registernew application
+
+extarct github id and secret
+
+now you can use api /api/auth/signin || now you can use api /api/auth/signout

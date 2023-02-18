@@ -1,0 +1,14 @@
+you can import signIn and signOut from "next-auth/client"
+
+
+how use these 
+
+<Link href="/api/auth/signIn">
+<button onClick((e)=>{
+
+    e.prevent.default()
+    signIn("github")
+  
+})
+
+</Link>
