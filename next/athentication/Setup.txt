@@ -1,0 +1,17 @@
+1- install package npm i next-auth 
+
+2- create dynamic root [...nextauth]
+
+    import nextAuth from "next-auth"
+    import providers from "next-auth/providers"
+
+    export default NextAuth({
+        providrs:[
+            providers.GitHub({
+                clientId:"",
+                clientSecret:""
+            })
+        ]
+    })
+
+3- login github acount
