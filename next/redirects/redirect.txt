@@ -1,0 +1,25 @@
+how redirect ? 
+
+
+zamani ke mihain address ye chizi ro avaz konin az redirec estefade mikonin 
+
+
+
+
+
+go to next.confing.js 
+
+module.exports={
+    redirects:async()=>{
+        return[
+            {
+                source:'/about',
+                destination:'/',
+                permanet:false,
+            }
+        ]
+    }
+}
+
+
+!!permanet : yani vase hamishe avaz shode ya na in vse moror gar kheili moheme
