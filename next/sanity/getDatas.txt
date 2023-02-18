@@ -1,0 +1,81 @@
+confing sanity.js
+
+
+import { createClient } from "next-sanity";
+import createImageUrlBuilder from "@sanity/image-url";
+
+export const config = {
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
+  token: process.env.SANITY_API_TOKEN,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  apiVersion: "2021-10-21", // Learn more: https://www.sanity.io/docs/api-versioning
+  useCdn: process.env.NODE_ENV === "production",
+};
+
+// Set up the client for fetching data in the getProps page functions
+export const sanityClient = createClient(config);
+
+/**
+ * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
+ * Read more: https://www.sanity.io/docs/image-url
+ **/
+export const urlFor = (source) => createImageUrlBuilder(config).image(source);
+
+
+
+
+
+
+in api getCategories.ts
+
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from "next";
+import { groq } from "next-sanity";
+import { sanityClient } from "../../sanity";
+
+const query = groq`*[_type=="category"]{
+  _id,
+    slug,
+    title
+}`;
+
+type Data = {
+  categories: Category[];
+};
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
+  const categories = await sanityClient.fetch(query);
+  res.status(200).json({ categories });
+}
+
+
+
+
+
+
+create utils 
+
+
+export const fetchCategories = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCategories`
+  );
+  const data = await res.json();
+  const categories: Category[] = data.categories;
+  return categories;
+};
+
+
+in project
+
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  const categories = await fetchCategories();
+  return {
+    props: {
+      categories,
+    },
+  };
+};

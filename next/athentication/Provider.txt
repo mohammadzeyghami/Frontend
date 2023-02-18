@@ -1,0 +1,9 @@
+import {Provider} from "next-auth/client"
+
+function myApp({Conmponents , pageProps}){
+    return(
+        <Provider>
+        <Component {...pageProps}
+        </Provider>
+    )
+}

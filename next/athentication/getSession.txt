@@ -1,0 +1,15 @@
+import {getSession} from "next-auth/client"
+
+you can use this for safe your pages like 
+
+
+useEffect(()=>{
+    const sourcePage = async()=>{
+        const session = getSession()
+    }
+
+    if(!getsession){
+        signIn()
+    }
+
+},[])

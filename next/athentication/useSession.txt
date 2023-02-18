@@ -1,0 +1,11 @@
+import {useSession} from "next-auth/client"
+
+
+const [session , setsession] = useSession()
+
+
+and you can use this and see clients is signIN or not when some client sign in 
+its changed to true if not its gonna be false
+
+
+
