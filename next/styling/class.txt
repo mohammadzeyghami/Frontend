@@ -1,0 +1,6 @@
+ create .class in css file 
+
+
+ import filename from "adresss"
+
+ <div className:{filename.style you build}
