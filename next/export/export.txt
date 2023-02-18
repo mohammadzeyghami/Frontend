@@ -1,0 +1,22 @@
+this commande create project without json server so you need put all staticdatas on that
+
+
+
+
+
+go to pakage.json and edit scripts 
+
+write this 
+
+"export":"next build && next export"
+
+
+you cant put these items on that like ssr or Isr :
+
+1- Image component 
+
+2- gerserverSideProps
+
+3- ISr 
+
+4- fallback in getPaths
