@@ -1,0 +1,13 @@
+create file with .sass  in styles 
+
+
+you can import your sass style like this
+
+in _colors.scss  
+
+$orange : orange
+
+
+
+@import "colors"
+and use colors
