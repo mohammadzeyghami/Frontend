@@ -1,0 +1,7 @@
+ 1 - format : changing image format to web  p 
+
+ 2- size : -size 
+
+ 3- lazyLoading: lazy loading your images 
+
+ 4- placeHolder : give placeHolder:Blur when image is loading its be blur
