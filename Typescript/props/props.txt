@@ -1,0 +1,10 @@
+you create component 
+
+
+<Component name="something"/>
+
+type GreateProps{
+    name:string
+}
+
+in component (props:GreateProps)
