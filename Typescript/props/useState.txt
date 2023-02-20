@@ -1,0 +1,14 @@
+type esm {
+    fist:string,
+    last:string,
+    }
+
+
+
+const [name, setName] = useState<esm|null>(null)
+const [name, setName] = useState<esm>({}as esm)
+
+setName({
+    first:"mohammad",
+    last:"zeyghami"
+})
