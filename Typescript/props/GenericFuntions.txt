@@ -1,0 +1,6 @@
+type ListProps<T>={
+    item:T[]
+    onClick:(value:T)=>void
+}
+
+export const List = < T extends {}>({item ,onClick}: ListProps<T>) =>
