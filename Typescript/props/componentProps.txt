@@ -1,0 +1,12 @@
+type PrivateProps = {
+    isLoggedIn : boolean
+    component : React.ComponentType<profileProps>
+}
+
+export const Private = ({isLoggedIn , component:Component}:PrivateProps)=>{
+    if(isLoggedIn){
+        return <Component name="Vishmas" />
+    }else{
+        return<Login/>
+    }
+}
