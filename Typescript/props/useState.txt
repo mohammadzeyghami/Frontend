@@ -6,7 +6,7 @@ type esm {
 
 
 const [name, setName] = useState<esm|null>(null)
-const [name, setName] = useState<esm>({}as esm)
+const [name, setName] = useState<esm>({}as esm) !! we know better than compiler its a empty esm
 
 setName({
     first:"mohammad",
