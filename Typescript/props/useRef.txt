@@ -1,0 +1,15 @@
+const something = () =>{
+
+
+    useEffect(()=>{
+
+        const inputref = useRef<HTMLInputElement>(null! )
+        inputRef.current.focus()
+    },[])
+
+    return(
+        <div>
+            <input ref(inputRef)/>
+        </div>
+    )
+}
