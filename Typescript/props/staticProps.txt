@@ -1,0 +1,24 @@
+
+const name = {
+    first:"mohammad",
+    last:"zeyghami"
+}
+
+< Component name={name}/>
+
+
+
+
+
+in component 
+
+
+
+type GreateProps {
+    name:{
+    fist:string,
+    last:string
+    } if you use this [] you can use this multi time
+}
+
+const component = (name:GreateProps) =>{}

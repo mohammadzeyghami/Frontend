@@ -1,0 +1,22 @@
+<Component>children is here</Component>
+
+
+
+inside component
+
+
+type headingProps{
+    children:"string"
+}
+const components = (props:headingProps) =>{}
+
+
+
+
+react children when its a component 
+
+
+
+type headingProps {
+    children : React.ReactNode
+} 

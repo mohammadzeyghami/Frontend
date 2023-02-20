@@ -1,0 +1,8 @@
+type ContainerProps {
+    styles:React.CSSProperties
+}
+
+
+export const Component = (props:ContainerProps) =>{
+    return<div style={props.styles}></div>
+}
