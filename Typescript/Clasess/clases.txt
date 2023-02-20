@@ -1,0 +1,30 @@
+import {component} from "react"
+
+
+type CounterProps {
+    message : string
+}
+
+type CounterState = {
+    count : number
+}
+
+
+
+export class Counter extends Component <CounterProps , CounterState> {
+    state = {
+        count = 0
+    }
+    handelClick =()=>{
+    this.state((pervState)=>({ count : pervState.count + 1}))
+
+    render()
+    return{
+            <div>
+                <button onClick={this.handelClick}>Increment</button>
+                {this.props.message}{this.state.count   }
+                </div>
+    }
+ }
+
+}
