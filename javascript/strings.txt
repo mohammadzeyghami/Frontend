@@ -1,0 +1,3 @@
+concat("string") add mikone be akhare on jomle 
+
+search("string") index behemon mide
