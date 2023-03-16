@@ -1,0 +1,9 @@
+const nums=[1,2,3,4,5]
+
+nums.push(8) (add last item)
+num.pop()  (delete last item)
+
+num.shift(num) (add first item)
+num.unshift(num) (remove first item)
+
+you can add num to last num of array with push method
