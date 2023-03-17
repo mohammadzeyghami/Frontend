@@ -1,0 +1,11 @@
+restOperator 
+
+const user1 = ['ali','mohammad']
+
+
+function showUsers (...user) {   rest operator => item => array
+    users.forEach(user=> console.log(user))
+}
+
+
+showUsers(...user1) array => item

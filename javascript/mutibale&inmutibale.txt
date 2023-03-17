@@ -1,0 +1,21 @@
+mutibility = ghabel taghiir bashn 
+inMutibility = ghabel taghiir nbashn 
+
+
+mutibility 
+
+let name = {
+    name:"mohammad" ,
+    lastName: "zeighami",
+    id:2
+}
+
+let name2 = name 
+
+name2.name="ali"  name ham taghir mikone chon har do be ye heap eshare drn
+
+
+we msut do this 
+
+let name 2 = new name 
+
