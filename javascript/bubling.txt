@@ -3,6 +3,7 @@ be in migan bubling
 
 rahe hal  
 
+!!dar bubling az div kochik run mishe ta parent ama dar event capturing az parent run mishe ta farzand
+
 1-div.target.....    az . target estefade mikonim
 
-2- az

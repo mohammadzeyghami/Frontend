@@ -1,0 +1,15 @@
+dar object ha kheili az mavaghe niaz darim ta function daron object dige ro daron object jadid farakhani
+konim
+let object={
+    years function(){
+
+    }
+}
+
+let newobject={
+
+}
+
+newobject.apply.(years ,"props")
+newobject.call.(years ,[props])
+newobject.bind.(years ,[props])() !! bind farakhani nemshe baraye farakhanie on byd () bezarim
