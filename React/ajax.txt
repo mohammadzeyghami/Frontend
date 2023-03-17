@@ -1,0 +1,18 @@
+promis function ye shekl az call back function hast ke baraye inke to callback hell
+gir nakonim az .then va .catch estefade mikone 
+
+promise 
+
+
+let name = ()=>{
+    return new promise((resolve , reject)=>{
+        console.log(resolve)
+    })
+}
+
+
+name()
+    .then(()=>{"this is promis function"});
+    .catch((err)=>{
+        console.log("Error is  promise" + err)
+    })
