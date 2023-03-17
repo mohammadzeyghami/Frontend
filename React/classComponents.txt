@@ -3,3 +3,54 @@ export default class modal extends React.Component{
         return()
     }
 }
+
+
+
+
+default props 
+
+export default class modal extends React.Component{
+    render(){
+        return(
+            <di>
+                <p>{this.props.message}</p>
+            </di>
+        )
+    }
+}
+
+className.defaultProps={
+    message:"this is something here"
+}
+
+mounting 
+
+constructor  
+
+getDerivedStateFromProps  prop haro migire va to state ha mizare
+
+Render
+
+React update Dom and rels
+
+componentDidMount  camelan tamom shode 
+ 
+
+
+
+
+Update
+
+getDerivedStateFromProps
+
+shouldComponentUpdate(){
+    !!return true   htmn byd meghdar ture return she ta ejaze render shodan bde
+} 
+
+Render
+
+get SnapShot Before Update
+
+React update Dom and rels
+
+component did update
