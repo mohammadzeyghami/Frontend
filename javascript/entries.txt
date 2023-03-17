@@ -1,0 +1,18 @@
+we have a object 
+
+let name = {
+    name:"mohammad" ,
+    lastName: "zeighami",
+    id:2
+}
+
+we cant use for of method on objects so what must we do ? 
+
+
+we change this to array with object.entries 
+
+let newname = name.object.entries(name)
+
+newname look like this  newname=[["name","mohamamd"],["lastName","zeighami"],["id",1]] 
+
+now we can use for of loop on that

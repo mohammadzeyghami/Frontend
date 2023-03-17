@@ -1,0 +1,7 @@
+set ha type jadidi hstn k taze ezafe shodan  mesle array ha hastn vali property haye kamtari drn 
+fght map va forEach  !! dar set ha chiz haye tekrari hazf mishan 
+
+let name  = new Set(arrayname)    tabdil array be set 
+
+
+let name = [...setName] tabdil set be name
