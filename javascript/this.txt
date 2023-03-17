@@ -1,0 +1,24 @@
+this  
+
+
+1- zamani k ro element ejra she 
+
+<li onClick={()=>console.log(this)}></li>    kolle in element ro mide
+
+2-in function(){
+    console.log(this) window ro mide 
+}
+
+3-in object
+
+    let user ={
+        id:1,
+        name:'mohammad',
+        age:22
+        showThis:function(){
+            console.log(this)
+        }
+    }
+    yser.showThis()
+
+kolle in object ro mide

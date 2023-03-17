@@ -1,0 +1,8 @@
+zamani ke chand div dakhel ham darim age dive child ro run konim bagie div haye parent ham run mishan
+be in migan bubling 
+
+rahe hal  
+
+1-div.target.....    az . target estefade mikonim
+
+2- az
