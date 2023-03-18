@@ -1,0 +1,29 @@
+useRef()
+
+in hook mesle useState vali ye tafavot haii dre 
+1- ba update shodanesh app re-render nmishe 
+2- attribute haii mesle focus dre
+3- 1 done value dre dakhel current ke ba .current be on dastresi peyda mikonim 
+va mitonim hata be atribute haye dom hm dastersi peyda konim
+
+
+
+
+
+import {useRef} from React
+
+
+
+
+const component = () =>{
+    const inputUseRef=useRef()
+    useEffect(()=>{
+        inputUseRef.current.input()
+    })
+    return(
+        <>
+            <input ref={inputUseRef} placeHolder="type something" type="text"
+        </>
+    )
+    
+}
