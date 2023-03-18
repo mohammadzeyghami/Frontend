@@ -6,6 +6,18 @@ dobare rendre mishe .
 
 !! hamishe byd return ye value bashe 
 
-const name =UseMemo(()=>{
+const name = UseMemo(()=>{
     return 
 },[dependensi])
+
+
+
+
+
+
+useCallback()
+
+1- zamani k data haye ma  function haii ba vorodi refrence hstn az useCallback estefade mikonim
+2- az use callback braye inke ye function kolln ejra she estefade mikonim 
+
+const name = useCallback(()=>{algoritms},[])
