@@ -21,3 +21,11 @@ useCallback()
 2- az use callback braye inke ye function kolln ejra she estefade mikonim 
 
 const name = useCallback(()=>{algoritms},[])
+
+
+
+
+useMemo vs memo 
+
+
+useMemo bataye ye ghesmat az componente memo bataye kolle component
