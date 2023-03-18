@@ -1,0 +1,11 @@
+useMemo()
+
+useMemo miad return ro yadesh mimone va fght zamani k dependensi taghiir kone on 
+
+dobare rendre mishe .
+
+!! hamishe byd return ye value bashe 
+
+const name =UseMemo(()=>{
+    return 
+},[dependensi])
