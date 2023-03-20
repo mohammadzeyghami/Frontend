@@ -1,0 +1,15 @@
+reducer ha  function hstn  ke action ro migiran va ye taghore to store ijad mikonan
+
+function counterReducer(action){
+    switch(action.type){
+        case 'increment':{
+            return newStore
+        }
+         case 'decerement':{
+            return newStore
+        }
+         default :{
+            return Store
+        }
+    }
+}

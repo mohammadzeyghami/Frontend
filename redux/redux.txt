@@ -1,0 +1,31 @@
+aval miaim ye reducer misazim 
+
+
+
+function counterReducer(action){
+    switch(action.type){
+        case 'increment':{
+            return newStore
+        }
+         case 'decerement':{
+            return newStore
+        }
+         default :{
+            return Store
+        }
+    }
+}
+
+bad ye store misazim va dakhele on store pas midim
+
+
+const store = redux.createStore(counterReducer)
+
+
+
+
+elem.addEventListener("onClick" , ()=>{
+    store.dispatch({type:increment})
+    let newValue = store.getState()
+    elem.textContent= newvalue
+})
