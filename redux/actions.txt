@@ -1,0 +1,4 @@
+action ha ye ibject hstn kke ye type dakheleshon drn.
+
+
+let incerementAction = {type:"SHOP_INCREMENT"}      syntax in htmn bayad UPPERCASE bashe ba _ 
