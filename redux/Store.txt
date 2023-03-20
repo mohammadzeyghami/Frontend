@@ -1,0 +1,10 @@
+store data haii hast ke ma to redux zakhite mikonim 
+
+let counterStore = 0   mitone ye sote bashe 
+
+
+let todolists = [
+{id:1 , title:"learnjs" , createdAt : "some where"},
+{id:1 , title:"learnjs" , createdAt : "some where"},
+{id:1 , title:"learnjs" , createdAt : "some where"},
+]
