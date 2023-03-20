@@ -2,7 +2,7 @@ aval miaim ye reducer misazim
 
 
 
-function counterReducer(action){
+function counterReducer(action) {
     switch(action.type){
         case 'increment':{
             return newStore
@@ -24,7 +24,7 @@ const store = redux.createStore(counterReducer)
 
 
 
-elem.addEventListener("onClick" , ()=>{
+elem.addEventListener("onClick" , () => {
     store.dispatch({type:increment})
     let newValue = store.getState()
     elem.textContent= newvalue
