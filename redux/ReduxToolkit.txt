@@ -22,7 +22,14 @@ function App(){
     )
 }
 
+import {createSlice} from reduxjs/toolkit
 
-3-in {}
+const initialState ={ value:0 }
+
+
+in counterSlice = createSlice({
+    name:"counter",
+    initialState
+})
 
 
