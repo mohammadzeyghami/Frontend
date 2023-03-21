@@ -69,4 +69,19 @@ export default store
 
 
 
-5- incomponent
+5- in component
+
+import {useDispatch , useSelector} from "react-redux"
+import {incrementAction , decerementAction} from "./counterSlice"
+
+const export default Counter = () =>{
+    const value = useSelector(state=> state.counter.value)
+    const despatch = useDispatch
+
+    retunr (
+        <button onClick=(()=> dispatch(incrementAction()))></button>
+        <h1>{value}</h1>
+        <button onClick=(()=> dispatch(decrementAction()))></button>
+    )
+
+}
