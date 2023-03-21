@@ -48,3 +48,25 @@ in counterSlice = createSlice({
 export const {increment: incrementActions , decerement: decerementActions} = counterSlice.actions
 
 export default counterSlice.reducer
+
+
+
+
+4- in Store again 
+
+import counterReducer from "./"
+import counterSlice from "./counterSlice
+
+const store = configureStore({
+    reducer:{
+        counter : counterSlice
+    }
+})
+
+export default store
+
+
+
+
+
+5- incomponent
