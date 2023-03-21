@@ -1,0 +1,28 @@
+1- create store 
+
+in Strore : 
+
+const store = configureStore({
+    reducer:{}
+})
+
+export default store
+
+
+
+2-in app.js 
+
+import provider from "react-redux"
+import store from "./store"
+
+
+function App(){
+    return(
+        <Provider store={store}></Provider>
+    )
+}
+
+
+3-in {}
+
+
