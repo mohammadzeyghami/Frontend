@@ -76,9 +76,11 @@ import {incrementAction , decerementAction} from "./counterSlice"
 
 const export default Counter = () =>{
     const value = useSelector(state=> state.counter.value)
-    const despatch = useDispatch
+    const despatch = useDispatch()
 
-    retunr (
+    
+
+    return (
         <button onClick=(()=> dispatch(incrementAction()))></button>
         <h1>{value}</h1>
         <button onClick=(()=> dispatch(decrementAction()))></button>
