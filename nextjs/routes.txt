@@ -1,0 +1,25 @@
+nasted routes 
+
+
+in folder  
+
+folder name / index.js 
+
+
+
+
+
+dynamic routes 
+
+[js file in this ]
+
+
+
+
+
+
+nasted dynamic routes
+
+const route = useRouter()
+
+const productId = router.query.productId
