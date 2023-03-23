@@ -10,6 +10,15 @@ api.get("/").then(res=>{console.log(res)})
 
 post : 
 
-api.get("/" , {title: "Test" , "id" : 4}).then(res=>{console.log(res)})
+
+const createCourse = async () => {
+let res = await api.get("/" , {title: "Test" , "id" : 4 }).then(res=>{console.log(res)})
+}
 
 
+
+delete:
+
+const delete = async (id) => {
+let res = await api.delete("/id").then(res=>{console.log(res)})
+}
