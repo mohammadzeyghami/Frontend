@@ -8,3 +8,8 @@ const api = axios.create({baseUrl : `link`})
 api.get("/").then(res=>{console.log(res)})
 
 
+post : 
+
+api.get("/" , {title: "Test" , "id" : 4}).then(res=>{console.log(res)})
+
+
