@@ -22,3 +22,11 @@ delete:
 const delete = async (id) => {
 let res = await api.delete("/id").then(res=>{console.log(res)})
 }
+
+
+
+update:
+
+const update = async (id , val) => {
+let res = await api.patch("/id" ,{title : val}).then(res=>{console.log(res)})
+}
