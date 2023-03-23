@@ -1,0 +1,10 @@
+1 - create api 
+
+
+get :
+
+const api = axios.create({baseUrl : `link`})
+
+api.get("/").then(res=>{console.log(res)})
+
+
