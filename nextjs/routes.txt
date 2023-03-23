@@ -18,8 +18,21 @@ dynamic routes
 
 
 
-nasted dynamic routes
+nasted dynamic routes:
 
 const route = useRouter()
 
 const productId = router.query.productId
+
+
+
+
+
+catch all routes 
+
+folder 
+    [...file]
+
+its catch all routess with /folder/evrything
+
+
