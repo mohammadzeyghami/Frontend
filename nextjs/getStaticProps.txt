@@ -1,0 +1,12 @@
+getStaticProps only runs in server side 
+the function never run in client side
+the codes you write inside getServerSideProps wont included in js bundel
+to sent that to browser
+
+
+
+you write server-side props directly in get server side props
+you can acssesing system using the fs  module or querydata base inside 
+get staticProps
+dont worry about api keys getStaticProps dont put that on browser
+
