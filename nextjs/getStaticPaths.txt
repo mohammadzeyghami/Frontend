@@ -1,0 +1,23 @@
+in here we can get paths with
+
+export aysnc function getStaticProps() {
+    const response = await fetch("link")
+    const data = await response.json()
+
+    const paths = data.map((path)=>{
+        return {
+            params : {
+                postId: `${post.id}`
+            }
+        }
+    })
+    return {
+        paths,
+        fallback:false
+        revalidate: 30
+    }
+} 
+
+
+
+fallback : true 
