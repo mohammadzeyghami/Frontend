@@ -1,0 +1,1 @@
+create file 404.jsx in routes folder and do evrything you want 
