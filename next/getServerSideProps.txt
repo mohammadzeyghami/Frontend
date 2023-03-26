@@ -1,16 +1,30 @@
 getServerSideProps : 
 
+its run on serverSide 
+the function is never run on cliet-side
+the code on serverSide in not encluded even on js bundel
+you can write server side  code directly on severSideProps 
 
 
-in function etelaat ro migire ba har req mifreste samt server onja render mikone (html mikone) 
-va on page ro ersal mikone be client side  zamane bishtary migire 
 
 
 
 
-only run in server side
 
-its not be on data bandels js sending to serverside
-you can write serverside codes directly in getServerSideProps
-getServerSideProps htmn byd to page neveshte she na to components
-hatmn byd props return kone va props byd object bashe
+
+
+serverSideProps with dynamic routes 
+
+export const component = () =>{
+    return{}
+}
+
+export async function getServerProps(context){
+    const {params} = context 
+    const {category} = params 
+    const response = await fetch(`address.${params}`)
+
+}
+
+we fetch datas on the initial req time
+we loss seo if we get all datas with isr or revalidate

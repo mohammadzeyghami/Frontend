@@ -51,7 +51,7 @@ useRouter
         )
     }
 
-revalidate 
+revalidate  isr = incremental static reganaration
 
     cosnt paths = data.map((item)=>{
         return {
