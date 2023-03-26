@@ -14,7 +14,13 @@ export const DashboardSwr = () =>{
     if (!data) return "Loading"            
     return(
         
-        items
+        <>
+            <div>{data.items}</div>
+            <div>{data.items}</div>
+            <div>{data.items}</div>
+            <div>{data.items}</div>
+            <div>{data.items}</div>
+        </>
      
     )
 } 
