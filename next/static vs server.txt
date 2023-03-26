@@ -1,0 +1,8 @@
+static : 
+when you dont need pre-render the data
+exampel : dashboard admin
+
+its private that is behind a login screen 
+
+you dont need seo
+
