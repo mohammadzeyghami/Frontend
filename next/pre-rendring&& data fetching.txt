@@ -1,0 +1,22 @@
+next js support two forms of pre-rendering static-generation   
+
+static-generation: 
+
+
+in this method you generate html pages at build time 
+here you have html page and this is a ceo frendly 
+in dynamic pages you need getStaticPaths too
+with increamental static regenaration you can update your pages
+
+
+
+serverSide - rendering :
+
+fetch datas at request time
+personalize data based on  user information in the  incoming request
+
+example : news listing page
+
+getServerSideProps function helps with ssr data fetching
+we can combining pre-rendring with client-side data fetching
+shallow routing- Routing without calling getStaticProps

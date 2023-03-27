@@ -1,0 +1,12 @@
+inside jsonconfing.json 
+
+{
+    "compilerOptions":{
+        "baseUrl" : "."
+        "paths" : {
+            "@/layout/*":["components/layout"]
+        }
+    }
+}
+
+now we can update import links with @/layout/...
