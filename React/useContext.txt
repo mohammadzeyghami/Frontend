@@ -1,0 +1,31 @@
+in context file 
+
+import React , {createContext , useContext} from "react"
+
+const Context = createContext();
+
+export const StateContext = ({children}) =>{
+
+states ...
+
+}
+
+
+
+
+
+
+in app.js
+
+
+function MyApp({Component , PageProps}){
+    return(
+        <StateContext>
+            <Layout>
+                 <Component {...pageProps}/>
+            </Layout>
+        </StateContext>
+    )
+}
+
+
