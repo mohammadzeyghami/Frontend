@@ -12,7 +12,7 @@ post :
 
 
 const createCourse = async () => {
-let res = await api.get("/" , {title: "Test" , "id" : 4 }).then(res=>{console.log(res)})
+let res = await api.post("/" , {title: "Test" , "id" : 4 }).then(res=>{console.log(res)})
 }
 
 

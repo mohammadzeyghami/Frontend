@@ -5,3 +5,17 @@
  3- lazyLoading: lazy loading your images 
 
  4- placeHolder : give placeHolder:Blur when image is loading its be blur
+
+ 5-add domain 
+    in nextConfing
+    
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["bayut-production.s3.eu-central-1.amazonaws.com"],
+  },
+};
+
+module.exports = nextConfig;
+
