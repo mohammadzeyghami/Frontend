@@ -1,0 +1,4 @@
+1-alternative to js 
+2-allow us to use strict types
+3-supports modern featurs (arrow function , let , const)
+4-extra features (generic , interfaces , tuple etc)
