@@ -1,21 +1,51 @@
 useMemo()
 
-useMemo miad return ro yadesh mimone va fght zamani k dependensi taghiir kone on 
+ma ba useMemo miaim ye ghesmat code to component ro  render  sharti mikonim msln 
 
-dobare rendre mishe .
+{useMemo(()=>{
+    codes
+},[state])}
 
-!! hamishe byd return ye value bashe 
+aln dige fght ba change shodan on state in codes ejra mishan
 
-const name = UseMemo(()=>{
-    return 
-},[dependensi])
+!! use memo vase loop haye sangin va ya fetch krdn data estefade mishe
 
 
 
+memo() 
+
+
+const component = memo(props)=>{
+    return(
+        codes
+    )
+}
+
+
+memo fght zamani ke props avaz shan component dobare ejra mishe 
 
 
 
 useCallback()
+
+
+zamani ke props ma notprimative bashn byd az useCallback estefade konim hamrah ba memo 
+chon memo tashkis nmide 
+
+
+const funcName = useCallback(()=>{},[state])
+
+const component = memo(props)=>{
+    return(
+        codes
+    )
+}
+
+!!useCallback zamani ke az memo estefade kardim va propse ma function hst estefade mikonim
+
+
+
+
 
 1- zamani k data haye ma  function haii ba vorodi refrence hstn az useCallback estefade mikonim
 2- az use callback braye inke ye function kolln ejra she estefade mikonim 
@@ -25,7 +55,7 @@ const name = useCallback(()=>{algoritms},[])
 
 
 
-useMemo vs memo 
+useMemo vs 
 
 
 useMemo bataye ye ghesmat az componente memo bataye kolle component

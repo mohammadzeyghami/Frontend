@@ -1,0 +1,6 @@
+controlled :
+
+    1- dont have state and we pass props to that
+
+    2- in Forms we must using useState for value of forms and set evry word on that with 
+    setState  (becaus with this rotation we have states before submit) 
