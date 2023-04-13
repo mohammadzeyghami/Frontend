@@ -1,9 +1,60 @@
 install jest   npm i jest 
+install types/js  npm i @types/jest
 
 inside package.json 
     'scripts':{
         'test':'jest'   ! htmn in command to pak mikonim va jest ro minevisim
     }
 
+
+
+
+create code.js
+
 create tests folder 
-create code.test.js
+create code.test.js  ! file teste har fili byd name = namecode   .test.js | .spec.js hm dshte bashe
+
+
+
+
+create jsonconfing.json and
+
+{'typeAcquisition': {
+    'include':[]
+}}
+
+
+
+
+
+in /code.js 
+
+function gte(a,b){
+    if(a>b) return true;   (1)
+    if(a<b) return false;  (2)
+    if(a==b) return true;  (3)
+}
+module.exports= gte;
+
+
+! length unit test hamishe >= masir ejra   (3) or (4)
+
+
+
+
+
+in tests/code.test.js
+
+const {gte} =require('./../code')
+
+describe('gte' ! name function,()=>{
+    it('gte - should return true if a is grater than b ' , ()=>{
+        const result = gte(10,5)
+        expect(result).toBe(true);   !mige result byd true bashe value 
+
+        ! tobe truthiness to jest search koni kolli dige hst
+    })
+})
+
+
+run npm test in command
