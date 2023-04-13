@@ -1,0 +1,64 @@
+npm i next-auth
+
+create this route 
+
+
+/api/auth/[...auth].js
+
+import NextAuth from 'next-auth'
+import providers from 'next-auth/providers'
+
+export default NextAuth({
+    providers:[
+        providers.GitHub({
+            clientId:'',
+            clientSecret:''
+        })
+    ]
+})
+
+
+
+go to github website and login 
+
+profile/settings/DeveloperSettings/Oathapps/registerNewApplication
+
+name : ...
+
+HomePageUrl:
+    http://localhost:3000
+
+
+application description
+    empity
+
+
+authorization callback url 
+    http://localhost:3000
+
+
+register
+
+
+
+after this give you 
+
+Client ID
+''
+
+Client secret
+''
+
+put these on .env.local
+
+GitHub_ID=
+GitHub_SECRET=
+
+
+
+now for sign in go to /api/auth/signin 
+and give token for signin inside coockie 
+
+
+for signout go to /api/auth/signout
+and remove token for signout inside coockie 
