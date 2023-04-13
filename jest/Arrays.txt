@@ -1,0 +1,30 @@
+
+in /code.js 
+
+function array(){
+   return [
+    'item1',
+    'item2',
+    'item3',
+
+   ]
+}
+module.exports= gte;
+
+
+
+
+
+in test 
+
+
+const {array} =require('./../code')
+
+describe('array' ,()=>{
+    it(' should pass if array have item1' , ()=>{
+        const result = array()
+        expect(result).toCaontain(true);   !mige result byd true bashe value 
+
+        ! tobe truthiness to jest search koni kolli dige hst
+    })
+})

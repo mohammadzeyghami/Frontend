@@ -1,0 +1,36 @@
+
+in /code.js 
+
+function object(){
+   return {
+    'item1',
+    'item2',
+    'item3',
+
+   }
+}
+module.exports= gte;
+
+
+
+
+
+in test 
+
+
+const {object} =require('./../code')
+
+describe('object' ,()=>{
+    it(' should pass if object have item1' , ()=>{
+        const result = object()
+        expect(result).toEqual(true);   !mige result byd true bashe value 
+
+        ! tobe truthiness to jest search koni kolli dige hst
+    })
+})
+
+
+
+
+! .toEqual baraye object hast sare not primative bodan
+! .toMatchObject baraye object hast va baraye moghayese 1 property

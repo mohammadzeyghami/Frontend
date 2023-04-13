@@ -1,0 +1,39 @@
+
+in /code.js 
+
+function login(password){
+   if(password !== '1234')
+
+   throw new Error('password is wrong')
+   return{jwt:"848764"}
+
+   
+}
+module.exports= gte;
+
+
+
+
+
+in test 
+
+
+const {login} =require('./../code')
+
+describe('login' ,()=>{
+    it('should throw an Error if password is wrong ', ()=>{
+        expect(()=>{login('5555')}).toThrow()
+      
+       
+    })
+    it('should return jwt if password is not wrong  ', ()=>{
+        const result = login('1234')
+        expect(result).toHavePeroperty('jwt')
+      
+       
+    })
+})
+
+
+
+
