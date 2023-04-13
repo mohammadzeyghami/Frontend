@@ -1,0 +1,12 @@
+import {Provider} from 'next-auth/client'
+
+
+
+const MyApp = () =>{
+    return(
+        <Provider>
+            <Navbar/>
+            <Component {...pageProps}/>
+        </Provider>
+    )
+}

@@ -1,3 +1,9 @@
+
+client -----dispatch------action------reducer----state----subscribe----client
+
+
+
+
 aval miaim ye reducer misazim 
 
 

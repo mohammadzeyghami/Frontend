@@ -1,0 +1,15 @@
+mutate = taghir ddn
+immutate = taghir nadadn
+
+mutable = taghir pazir
+immutable  = taghir napazir
+
+
+primitive types 
+immutate = taghir nadadn
+immutable   = taghir napazir
+
+
+refrence types
+mutable = taghir pazir
+mutate = taghir ddn

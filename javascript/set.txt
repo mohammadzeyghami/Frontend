@@ -5,3 +5,8 @@ let name  = new Set(arrayname)    tabdil array be set
 
 
 let name = [...setName] tabdil set be name
+
+
+miad array haro itrable mikone (ghabele peymayesh)
+
+yani for va  for of  mishe roshon zd

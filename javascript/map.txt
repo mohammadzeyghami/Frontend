@@ -1,0 +1,7 @@
+map ha hm mesle set ha hstn mian itrable mikonan vli object haro 
+
+const map =  new Map object.entries(objectName)
+
+
+methods .has .get .delete .size
+

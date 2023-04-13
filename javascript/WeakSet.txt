@@ -1,0 +1,3 @@
+let object = new WeackSet()
+
+zamani ke objecti ke ma dadim be WeackSet dar daster nabashe miad onro az memory ram va heap pak mikone

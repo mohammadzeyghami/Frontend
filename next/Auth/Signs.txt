@@ -1,0 +1,17 @@
+import {signIn , signOut} from 'next-auth/client'
+
+<Link to={'api/auth/signin'}>
+    <a onClick((e)=>{
+        e.preventDefault()
+        signIn()
+    })>Sign In</a>
+</Link>
+
+!!!signOut('into age GitHub bezarim mostaghim lom mikone age nzarim byd entekhabesh konim')
+
+<Link to={'api/auth/signout'}>
+    <a onClick((e)=>{
+        e.preventDefault()
+        signOut()
+    })>Sign In</a>
+</Link>

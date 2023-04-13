@@ -1,0 +1,7 @@
+continous intigration   beroz resani modavem 
+
+
+1-install requirements ---  2-build app --- 3-test(codeFormating-Linting) if(sucsess){covarageReport}
+( functional test--- 4-intigration Testing ---- 5-EndToEnd Test --- 6-SmokeTest ---- 7-Security Test (HardCode Api key)
+--- 5-whiteBox BlackBox Test ) (6- performance test ---- 7-scalibility Test --- 8-loadTest or StressTest
+9-Disaster Recovery Testing)
