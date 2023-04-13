@@ -1,0 +1,9 @@
+install jest   npm i jest 
+
+inside package.json 
+    'scripts':{
+        'test':'jest'   ! htmn in command to pak mikonim va jest ro minevisim
+    }
+
+create tests folder 
+create code.test.js
