@@ -1,0 +1,92 @@
+ const mockFunction = jes.fn();
+        mockFuntion.mockResolvedValue(1)       !mockFuntion.mockReturnValue(2)  2 ro barmigardone
+        await mockFunction()
+
+
+
+
+
+
+
+
+we create a file service.js 
+
+in /service.js 
+
+function getUserById(){
+    console.log('reading data from db ...');
+    const users = [
+        {id: 1 , name:'mohammad' , purchaseCount:15 },
+        {id: 2 , name:'ali' , purchaseCount:3 },
+        {id: 3 , name:'reza' , purchaseCount:4 },
+        {id: 4 , name:'hamid' , purchaseCount:8 },
+    ]
+}
+
+
+function SendEmail(name , message){
+    console.log('email send');
+}
+
+module.exports = {
+    getUserById , SendEmail
+}
+
+
+in /code.js
+
+const service = require('./service')
+const discount = 0
+
+function calculateDiscount(id){
+    const user = service.getUserById(id);
+    if(user.purchaseCount>3)
+        discount=10
+    service.SendEmail(user.name , `you have got ${discount} perecent discount `)
+    return discount
+}
+
+module.exports=calculateDiscount
+
+
+
+in /code.test.js 
+
+const service = require('./service')
+const calculateDiscount = require('./calculateDiscount')
+
+
+describe('calculateDiscount' ,()=>{
+    beforeEach(()=>{
+        service.SendEmail = jest.fn()
+    }) !ghable ejra har it miad in ro ejra mikone afterEach hm darim ke badesh ejra mikone
+
+    it('should return 10 if user has more than 3 purchase ', ()=>{
+       
+        service.getUserById = jest.fn().mockReturnValue({
+            id:4 , 
+            name : 'john' , 
+            purchaseCount: 7
+        }) 
+       expect(calculateDiscount()).toBe(10)
+    }) 
+
+    it('should return 10 if user has more than 3 purchase ', () => {
+       
+        service.getUserById = jest.fn().mockReturnValue({
+            id:4 , 
+            name : 'john' , 
+            purchaseCount: 2
+        }) 
+
+       calculateDiscount();
+       expect(service.SendEmail).toHaveBennCalled();
+       expect(service.sendEmail.mock.calls[0][0].toBe('john'))
+       expect(service.sendEmail.mock.calls[0][1].toCaontain('10 percent'))
+    })  
+       
+  
+   
+    
+    
+})

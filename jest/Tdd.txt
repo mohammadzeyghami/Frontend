@@ -1,0 +1,5 @@
+test driven development  or test first
+
+tose azmayesh mehvar 
+
+    yani ghabl az code bzanim test ro benevisim va test haii ke faild shodan ro ghabol shim
