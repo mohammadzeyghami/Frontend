@@ -1,0 +1,18 @@
+function Decoration 
+
+function name (params){
+    return()
+}
+
+name(aguments)
+
+
+params varibale you use for take input  function name (params)
+
+agument value you give to function name(aguments)
+
+
+
+function Expression 
+
+const = name = 

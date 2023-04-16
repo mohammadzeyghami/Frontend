@@ -1,0 +1,15 @@
+const name fucntion (){
+    const count = 0 ; 
+    return (
+        incerese:(value)=>{
+            count+=value
+        }
+        getValue:(value)=>{
+            return count
+        }
+    )
+}
+
+const secoundName = name()
+secoundName.getvalue()  give us 0 
+

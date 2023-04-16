@@ -1,6 +1,9 @@
 1- create store 
 
+
 in Strore : 
+
+import {configureStore} from '@reduxjs/toolkit'
 
 const store = configureStore({
     reducer:{}
@@ -22,7 +25,7 @@ function App(){
     )
 }
 
-import {createSlice} from reduxjs/toolkit
+import {createSlice} from '@reduxjs/toolkit'
 
 const initialState ={ value:0 }
 
@@ -44,6 +47,7 @@ in counterSlice = createSlice({
     }
 })
 
+ ina action ha hstn 
 
 export const {increment: incrementActions , decerement: decerementActions} = counterSlice.actions
 

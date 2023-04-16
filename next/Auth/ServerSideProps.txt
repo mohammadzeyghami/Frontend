@@ -1,0 +1,19 @@
+import {getSession} from 'next-auth/client'
+
+function Blog({data}){
+    return <h1> Blog Page = {data}</h1>
+}
+
+
+export default Blog
+
+
+export async function getServerSideProps(context){
+    const session = getSession(context)
+
+    return{
+        props: {
+            data : session ? 'list of 100 personalized blogs' :'list of free blogs'
+        }
+    }
+}

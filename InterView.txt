@@ -3,4 +3,13 @@ Entries = object.entries(objectName)  har kodom az property haro tabdil be array
 sets = array  .add    vali item ha tekrari ndrn property hashonam kmtare
 
 Itrable = ghabel peymayesh  (for - forof)
+
 WeakSets= delete datas  from memory - ram - heap
+
+impilicit convertion = tabdil khodkar type ha ( + string) ,  ( - num)  , (string / string = nun) (num/null(=0) = ) 
+(undifiend+evrything = nan)
+
+currying()()
+clossure = function ha daroni be function ha bironi dastresi drn
+
+counstructor function = new object
