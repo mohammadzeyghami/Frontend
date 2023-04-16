@@ -9,7 +9,36 @@ WeakSets= delete datas  from memory - ram - heap
 impilicit convertion = tabdil khodkar type ha ( + string) ,  ( - num)  , (string / string = nun) (num/null(=0) = ) 
 (undifiend+evrything = nan)
 
-currying()()
+currying
 clossure = function ha daroni be function ha bironi dastresi drn
 
+
+-------------------------------------------------------------------------------
+addarray
+
+    addarray = const name = (array1 , array2) =>{
+    [...array1,...array2]
+        } 
+
+    elementaddarray = const name = (el , array2) =>{
+    [el,...array2]
+    }
+
+
+
+-------------------------------------------------------------------------------
+
 counstructor function = new object
+
+
+-------------------------------------------------------------------------------
+const arr = [{},{},{}]
+
+
+const isNameExist = (name,arr) => array.some((item)=>arr.name === some )  
+
+const findObject = (name,arr) => {
+    const el = arr.find(el => el.name === name)
+
+    return boolean(el)
+}

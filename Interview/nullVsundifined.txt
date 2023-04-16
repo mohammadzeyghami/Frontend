@@ -1,0 +1,18 @@
+
+
+both are false values
+
+types:
+ undifined = undifined
+ null = object
+
+
+null == undifined  (true )
+null === undifined (false )
+
+
+
+
+
+
+
