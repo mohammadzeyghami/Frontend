@@ -1,0 +1,3 @@
+be kochik bodan va bozorg bodan hassase 
+
+console.log(undefined=== Null) true  chon Null N bozorg va varibale mishe chon tarif nashode undefined

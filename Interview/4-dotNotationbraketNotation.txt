@@ -1,0 +1,20 @@
+let person = {
+    id:1 ; 
+    name:mohammad ; 
+    lastName:zeyghami;
+}
+
+
+DotNotation : 
+   console.log(person.name)
+
+
+
+
+
+BracketNotation : 
+
+    zamani ke esme property ro ndarim va be jash ye varibale darim az bracketnotions estefade mikonim
+
+    let prop = 'lastname'
+    console.log(user[prop])
