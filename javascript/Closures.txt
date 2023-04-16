@@ -13,3 +13,33 @@ const name fucntion (){
 const secoundName = name()
 secoundName.getvalue()  give us 0 
 
+
+
+
+
+function human(n){
+    const name = n
+    function sayHi(){
+        console.log(`Hi my name is ${name}`)
+    }
+    function sayHowYouFill(){
+        console.log(` ${name} is feeling good!`)
+    }
+
+    return{
+        sayHi,
+        sayHowYouFill
+    }
+}
+
+const sina = human('sina')
+const mohammad = human('mohammad')
+
+
+
+mohammad.sayHi()
+
+log:Hi my name is mohammad
+
+
+closures remember outer function scope even after creation time .

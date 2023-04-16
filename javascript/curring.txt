@@ -1,0 +1,38 @@
+ we have 2 type of curry :
+
+
+ 1-with bind: (
+
+    let multiply = function (x,y){
+        console.log(x * y)
+    }
+
+
+
+
+    let multiplyByTwo = multiply.bind(this,2);   !!! inja x=2 mishe 
+    multiplyByTwo(5)   !!! 5*2 = 10
+
+
+
+
+    let multiplyByTwo = multiply.bind(this,2,3);   !!! inja x=2 , y=3 mishe 
+    multiplyByTwo()   !!! 3*2 = 6
+
+)
+
+
+
+2- function closures : (
+
+     let multiply = function (x){
+        return function (y) {
+            console.log(x*y)
+        }
+    }
+    
+)
+
+
+multiplyByTwo = multiply(5)
+multiplyByTwo(2)
