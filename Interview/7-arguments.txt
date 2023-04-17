@@ -1,0 +1,12 @@
+function addNumber() {
+  Array.from(aguments).forEach((number) => {   ! chon argument ha shebhe array hstn nmishe roshon forEach zd
+                                                 ps aval onaro be array tabdil mikonim
+    sum += number;
+  });
+}
+
+console.log(addNumber(1, 2, 3));
+
+
+
+!! arrow function ha method arguments ndrn.
