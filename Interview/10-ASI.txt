@@ -1,0 +1,10 @@
+automatic insert simicolon
+
+khodesh vasamon simicolon mizare bejoz time haii ke 
+
+1-after []   (htmn byd gozasht)
+
+2- after()   (htmn byd gozasht)
+
+3-vli age bad az return bezarim dige khate badio nmikhone
+

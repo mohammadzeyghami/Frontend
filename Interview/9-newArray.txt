@@ -1,0 +1,2 @@
+const name = new Array(length)  inja harchegahd length bedim undifined mizare be jash [undifined,undifined,undifined,undifined,]
+name.push(value)
