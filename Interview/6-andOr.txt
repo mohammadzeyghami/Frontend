@@ -1,0 +1,15 @@
+const result = null || undifined ; inja miad tak tak chek mikone ta true peyda kone vghti true nist ro akharin meghdar mimone
+
+const  result = null && undifined ; inja miad harja false bgire hmonja mimone pass null mishe
+
+
+
+const  result = 0 || 1 && 2 || 3  
+
+    aval 0 || 1   =  1  0 false  miad ro 1 va miste 
+
+    bad 1 && 2 miad ro 2 va miste 
+
+    2 || 3  chon 2 true ro 3 nmiad  
+
+    

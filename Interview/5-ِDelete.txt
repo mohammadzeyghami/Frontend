@@ -1,0 +1,14 @@
+let person = {
+    id:1 ; 
+    name:mohammad ; 
+    lastName:zeyghami;
+}
+
+delete person.lastName
+
+console.log(person.lastName)
+undifined
+
+! delete fght baraye hazf property az object estefade mishe  chize dige ro hzf nmitone kone
+
+

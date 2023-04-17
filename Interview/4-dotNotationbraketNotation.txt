@@ -18,3 +18,14 @@ BracketNotation :
 
     let prop = 'lastname'
     console.log(user[prop])
+
+
+ const propName = 'sabzlearn'
+
+ const obj = {
+    [propName]:propname      => sabzlearn:sabzlearn
+ }
+ const result = obj[propName]
+ console.log(result)  
+
+ undifined
