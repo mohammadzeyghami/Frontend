@@ -1,0 +1,19 @@
+value = 1
+
+value++    //log 2 
+++value    //log 3 
+
+
+value--    //log2
+--value    //log1
+
+
+but you cnt use this 
+
+console.log(5++)  //its give error to you 
+
+
+! 
+
+newValue = value++     !!inja aval meghdar value mire to new value badesh behesh ezafe mishe yane //value=2 newValue=1
+
