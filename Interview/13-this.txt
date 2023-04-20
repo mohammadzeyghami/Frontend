@@ -1,0 +1,72 @@
+object : {
+    title:'sabzlearn',
+    get : function (){
+        console.log(this)
+    }
+}
+object.get()   // kolle object ro mide
+
+----------------------------------------------------------------------
+
+
+-function random(){ 
+    console.log(this)
+}()
+
+
+
+----------------------------------------------------------------------
+var number = 100 ; 
+console.log(this.number)  // this to global scope be kolle window eshare mikone inja chon 
+number hm ba var mire zir majmome global pas 100 to log migire
+
+var obj = {
+    get: function (){
+        function fn(){
+            console.log(this) //window ro log migire chon darin ye function digast
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------
+
+
+
+function one (){
+    var num = 10
+    two()
+    
+}
+
+function two () {
+    console.log(this.num)
+}
+
+var num = 2
+
+one()  //log 2 mishe chon this to function ha be window eshare mikone va num chon ba var tarif shode
+mishe yeki az property ha window
+
+
+
+-----------------------------------------------------------------------
+
+
+var obj = {
+    get : function (){
+        return this // objet 
+    }
+}
+console.log(get()===obj)
+
+
+
+
+----------------------------------------------------------------------
+
+'use strick'
+
+function random () {
+    console.log(this)  // chon strick mode hst undifient mishe
+}

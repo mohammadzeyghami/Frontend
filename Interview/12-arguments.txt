@@ -1,0 +1,4 @@
+function random(a,a,a,a,a){
+    console.log(a)              //log5  akharin argument ham nam log gerefte mishe
+}
+random(1,2,3,4,5)
