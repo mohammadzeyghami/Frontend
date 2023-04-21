@@ -1,0 +1,16 @@
+typeof Object  constructor   // function
+
+
+var obj = {x:3 , y:4}
+console.log(Object.keys(obj))  ['x','y']
+                  .value(obg) [2,4]
+
+
+
+
+Object.freeze(obj) // dige freeze mishe va nmitonim chizi ezafe konim
+
+Object.seal(obj)  // seal hm ye kari mikone dige natonim chizi hzf konim
+
+
+console.log({}==={}) // false chon addreseshon frgh dre
