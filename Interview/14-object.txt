@@ -14,3 +14,14 @@ Object.seal(obj)  // seal hm ye kari mikone dige natonim chizi hzf konim
 
 
 console.log({}==={}) // false chon addreseshon frgh dre
+
+
+
+let numbers = [1,3,5,7,9,11]
+
+let itemRepeatObject = numbers.reduce((obj , currentItem)=>{
+    return{...obj , [currentItem]: (obj[currentItem]||0)+1}
+})
+
+let sortedITems = object.keys(itemRepeatObject).sort
+
