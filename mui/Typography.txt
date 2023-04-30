@@ -1,0 +1,5 @@
+<Typography variant="h1">text</Typography>
+
+variant = subtitle =  h6 but have defrent weight and font
+body1 = Ptag 
+body2 = Ptag 
