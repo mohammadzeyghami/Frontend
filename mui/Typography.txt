@@ -1,4 +1,4 @@
-<Typography variant="h1">text</Typography>
+<MuiTypography variant="h1">text</MuiTypography>
 
 variant = subtitle =  h6 but have defrent weight and font
 body1 = Ptag 
