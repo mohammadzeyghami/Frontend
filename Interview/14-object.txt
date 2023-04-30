@@ -23,5 +23,7 @@ let itemRepeatObject = numbers.reduce((obj , currentItem)=>{
     return{...obj , [currentItem]: (obj[currentItem]||0)+1}
 })
 
-let sortedITems = object.keys(itemRepeatObject).sort
+let sortedITems = object.keys(itemRepeatObject).sort((a,b)=>a-b)
+
+console.log(sortedITems[0])
 
