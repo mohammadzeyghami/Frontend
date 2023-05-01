@@ -1,0 +1,64 @@
+center.folder
+
+    center.js {
+
+        const Center = (props) => {
+            <div className='center'>{props.children}</div>
+        }
+    }
+
+
+in buttonfolder
+
+     Button.stories.js (
+            import React from 'react'
+            import Button from './Button'
+            import Center from "./Center/Center.js'
+            export default {
+                title:'Form/button'  ,    !! inja daron button ye folder form ijad mishe
+                component : Button
+                decorators :[story=><Center>{story()}</Center>]
+            }
+
+            export const Primary = () =><Center><Button variant='primary'>Primary</Button></Center>
+            
+                
+            
+        )
+
+
+
+
+        or 
+
+
+
+
+
+        center.folder
+
+    center.js {
+
+        const Center = (props) => {
+            <div className='center'>{props.children}</div>
+        }
+    }
+
+
+in buttonfolder
+
+     Button.stories.js (
+            import React from 'react'
+            import Button from './Button'
+            import Center from "./Center/Center.js'
+            export default {
+                title:'Form/button'  ,    !! inja daron button ye folder form ijad mishe
+                component : Button
+                decorators :[story=><Center>{story()}</Center>]
+            }
+
+            export const Primary = () =><Button variant='primary'>Primary</Button>
+            
+                
+            
+        )
