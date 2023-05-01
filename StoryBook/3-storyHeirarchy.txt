@@ -1,0 +1,14 @@
+ Button.stories.js (
+            import React from 'react'
+            import Button from './Button'
+
+            export default {
+                title:'Form/button'  ,    !! inja daron button ye folder form ijad mishe
+                component : Button
+            }
+
+            export const Primary = () =><Button variant='primary'>Primary</Button>
+            
+                
+            
+        )

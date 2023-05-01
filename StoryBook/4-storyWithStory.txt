@@ -1,0 +1,19 @@
+ Button.stories.js (
+            import {primary} from './primary/primary.stories.js'
+            import {large} from './Button/Large.stories.js'
+
+            export default {
+                title:'Form/button'  ,    !! inja daron button ye folder form ijad mishe
+                component : Button
+            }
+
+            export const PrimarySubcription = () =>(
+                <>
+                    <Large/>
+                    <Primary/>
+                </>
+            )
+            
+                
+            
+        )
