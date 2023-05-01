@@ -1,0 +1,19 @@
+in buttonfolder
+
+     Button.stories.js (
+            import React from 'react'
+            import Button from './Button'
+            import Center from "./Center/Center.js'
+            import {action , actions} from '@storybook/addon-actions'
+            export default {
+                title:'Form/button'  ,    !! inja daron button ye folder form ijad mishe
+                component : Button
+                decorators :[story=><Center>{story()}</Center>]
+            }
+
+            export const Primary = () =><Button onClick={action('Click handler')} variant='primary'>Primary</Button>
+            export const Primary = () =><Button {...actions('onClick','onMouseOver')} variant='primary'>Primary</Button>
+            
+                
+            
+        )
