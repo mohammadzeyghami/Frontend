@@ -6,14 +6,19 @@ import {useFormik} from 'Formik'
 const FormYoutube = () = > {
 
     const formik = useFormik({
-        name:'',
+       initialValues:{
+         name:'',
         lastName:'',
         Channel:'',
+       },
+       onsubmit : values =>{
+        console.log('Form data' , values)
+       }
     })
 
     return(
         <div>
-            <From>
+            <From onSubmitHandler={formik.handleSubmit}>
                 <label htmlFor='name'>Name</label>
                 <Input type='text' id='name' name='name' onChange={formik.handelChange} value={formik.values.name}/>
 
@@ -23,7 +28,7 @@ const FormYoutube = () = > {
                 <label htmlFor='name'>Channel</label>
                 <Input type='text' id='channel' name='channel' onChange={formik.handelChange} value={formik.values.name}/>
 
-                <button>Submit</button>
+                <button type='submit'>Submit</button>
             
             </From>
         </div>
