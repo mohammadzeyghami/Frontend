@@ -1,0 +1,22 @@
+
+
+const FormYoutube = () = > {
+
+    return(
+        <div>
+            <From>
+                <label htmlFor='name'>Name</label>
+                <Input type='text' id='name' name='name'/>
+
+                <label htmlFor='name'>Name</label>
+                <Input type='text' id='name' name='name'/>
+
+                <label htmlFor='name'>Channel</label>
+                <Input type='text' id='channel' name='channel'/>
+
+                <button>Submit</button>
+            
+            </From>
+        </div>
+    )
+}
