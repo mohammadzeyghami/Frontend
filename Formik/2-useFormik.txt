@@ -1,0 +1,34 @@
+import {useFormik} from 'Formik'
+
+
+
+
+const FormYoutube = () = > {
+
+    const formik = useFormik({})
+
+    return(
+        <div>
+            <From>
+                <label htmlFor='name'>Name</label>
+                <Input type='text' id='name' name='name'/>
+
+                <label htmlFor='name'>Name</label>
+                <Input type='text' id='name' name='name'/>
+
+                <label htmlFor='name'>Channel</label>
+                <Input type='text' id='channel' name='channel'/>
+
+                <button>Submit</button>
+            
+            </From>
+        </div>
+    )
+}
+
+
+1- managing form state 
+
+2- handling from submission
+
+3- Validation and error messages
