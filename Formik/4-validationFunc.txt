@@ -1,0 +1,62 @@
+import {useFormik} from 'Formik'
+
+
+
+
+const FormYoutube = () = > {
+
+    const formik = useFormik({
+       initialValues:{
+        name:'',
+        lastName:'',
+        Channel:'',
+       },
+       onsubmit : values =>{
+        console.log('Form data' , values)
+       }
+       validate:values => {
+        let errors = {}
+
+        if (!values.name){
+            errors.name = 'Required'
+        }
+        if(!values.email){
+            errors.email = 'required'
+        }
+        if(!values.channel){
+            erros.channel='required'
+        }
+
+        return erros
+       }
+    })
+
+    return(
+        <div>
+            <From onSubmitHandler={formik.handleSubmit}>
+                <div classname='form-control'>
+                    <label htmlFor='name'>Name</label>
+                    <Input type='text' id='name' name='name' onChange={formik.handelChange} value={formik.values.name}/>
+                    {formik.error.name?. <div className='error'>{formik.errors.name}</div> : null }
+                </div>
+
+                <div classname='form-control'>
+                    <label htmlFor='lastname'>lastName</label>
+                    <Input type='text' id='lastName' name='lastName' onChange={formik.handelChange} value={formik.values.lastName}/>
+                    {formik.error.lastName?. <div className='error'>{formik.errors.lastName}</div> : null }
+                </div>
+
+                <div classname='form-control'>
+                    <label htmlFor='channel'>Channel</label>
+                    <Input type='text' id='channel' name='channel' onChange={formik.handelChange} value={formik.values.channel}/>
+                    {formik.error.channel?. <div className='error'>{formik.errors.channel}</div> : null }
+                </div>
+
+                <button type='submit'>Submit</button>
+            
+            </From>
+        </div>
+    )
+}
+
+

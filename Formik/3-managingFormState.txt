@@ -7,7 +7,7 @@ const FormYoutube = () = > {
 
     const formik = useFormik({
        initialValues:{
-         name:'',
+        name:'',
         lastName:'',
         Channel:'',
        },
@@ -26,7 +26,7 @@ const FormYoutube = () = > {
                 <Input type='text' id='lastName' name='lastName' onChange={formik.handelChange} value={formik.values.lastName}/>
 
                 <label htmlFor='name'>Channel</label>
-                <Input type='text' id='channel' name='channel' onChange={formik.handelChange} value={formik.values.name}/>
+                <Input type='text' id='channel' name='channel' onChange={formik.handelChange} value={formik.values.channel}/>
 
                 <button type='submit'>Submit</button>
             

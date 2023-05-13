@@ -1,3 +1,7 @@
-import {MuiButton} from "./components/MuiTypogeraphy"
 
-<MuiButton variants={text , contained , outlined}></MuiButton>
+
+<Button variants={text , contained , outlined} size='large'></Button>
+
+
+
+

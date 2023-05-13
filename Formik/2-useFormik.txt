@@ -5,7 +5,11 @@ import {useFormik} from 'Formik'
 
 const FormYoutube = () = > {
 
-    const formik = useFormik({})
+    const formik = useFormik({
+        name : '' , 
+        email : '' ,
+        channel : ''
+    })
 
     return(
         <div>
@@ -13,10 +17,10 @@ const FormYoutube = () = > {
                 <label htmlFor='name'>Name</label>
                 <Input type='text' id='name' name='name'/>
 
-                <label htmlFor='name'>Name</label>
-                <Input type='text' id='name' name='name'/>
+                <label htmlFor='email'>email</label>
+                <Input type='text' id='email' name='email'/>
 
-                <label htmlFor='name'>Channel</label>
+                <label htmlFor='channel'>Channel</label>
                 <Input type='text' id='channel' name='channel'/>
 
                 <button>Submit</button>
