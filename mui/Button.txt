@@ -1,6 +1,20 @@
 
 
-<Button variants={text , contained , outlined} size='large'></Button>
+<Button variants={text , contained , outlined} size='small,medium,large'></Button>
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------colors----------------------------------------
+
+<Button color="primary , secoundary  ,error ,warning,info , success"></Button>
 
 
 
