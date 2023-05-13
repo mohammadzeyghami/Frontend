@@ -19,3 +19,25 @@
 
 
 
+
+
+------------------------------------     Button Group   ---------------------------------
+
+<Stack>
+    <Button variants="contained">left</Button>
+    <Button variants="contained">center</Button>
+    <Button variants="contained">right</Button>     
+</Stack>
+                                                 !! be ja in 
+
+            
+<Stack>
+  <ButtonGroup variants="text" orientation='vertical' size='small' color='secoundary'>
+    <Button>left</Button>
+    <Button>center</Button>
+    <Button>right</Button> 
+  </ButtonGroup>    
+</Stack>
+
+
+

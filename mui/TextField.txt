@@ -1,0 +1,19 @@
+<TextField />
+
+
+label='Name'  
+
+type = 'password'
+
+variant='outlined , filled , standard'
+
+size='small'
+
+color='secoundary'
+
+required
+
+helperText='Do Not Share Your Password With AnyOne' miad ziresh
+
+InputProps={{startAdorment : <InputAdorment position='start , end'>$</InputAdorment>}}
+
