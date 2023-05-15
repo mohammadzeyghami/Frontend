@@ -4,7 +4,7 @@ const FormYoutube = () = > {
 
     return(
         <div>
-            <From>
+            <From >
                 <label htmlFor='name'>Name</label>
                 <Input type='text' id='name' name='name'/>
 
