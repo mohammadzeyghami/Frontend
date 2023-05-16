@@ -1,0 +1,13 @@
+import {useParams} from "react-router-dom"
+
+const name = () => {
+    const params = useParams()
+    const userId = params.userId
+    return (
+
+        <div>
+
+        
+        </div>
+    )
+}
