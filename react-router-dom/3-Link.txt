@@ -1,0 +1,21 @@
+<Link to "./" >something</Link>
+
+
+
+
+
+
+
+import useNavigate from "react-router-dom"
+
+
+const name = () => {
+    cosnt Navigate = useNavigate()
+
+    useEffect(()=>Navigate("some place"))
+    return(
+        <div>
+        <button onclick(()=>(Navigate('orderSumary')))>orderPlace</button>
+        </div>
+    )
+}

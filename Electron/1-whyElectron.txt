@@ -1,0 +1,19 @@
+electron is an open source framework that is used to build cross platform dekstop applications using web technologies loke html 
+, css and kava script
+
+why dekstop apps ? 
+web apps have drawbacks 
+-writing conditional code becaus of browser diggrences. 
+-access to file sustem is also limted . 
+-slow network connecivity.
+
+why web tech ? 
+
+-Huge support community
+-Cross platform (windows or mac)
+
+
+
+how does electron work
+
+chromium + nodejs

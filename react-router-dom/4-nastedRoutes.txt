@@ -1,0 +1,24 @@
+inside App.js 
+
+
+    <Routes>
+        <Route to='/products' element={<Productss/>}>
+            <Route to='something' element={<something/>}/>
+        </Route>
+    
+    </Routes>
+
+
+
+inside Products.js
+
+import {Outlet} from "react-router-dom"
+    <div>
+        //wrapper
+        <Navbar/>
+       <div>
+        <Sidebar/>
+        <Outlet/>
+       </div>
+        <Footer/>
+    </div>

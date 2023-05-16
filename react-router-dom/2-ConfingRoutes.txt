@@ -1,0 +1,30 @@
+import {BrowserRouter} from "react-router-dom"
+
+
+
+in index.js
+ {
+    ReactDom.render(
+    <React.StrickMode>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </React.StrickMode>
+    )
+ }
+
+
+import {Routes , Route} from "react-router-dom"
+
+
+in App.js 
+  {
+    <Routes>
+     <Route path='/' , element={<Home/>} />
+    </Routes>
+
+
+  }
+
+
+  
