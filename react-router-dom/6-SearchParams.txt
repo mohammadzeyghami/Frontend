@@ -1,0 +1,17 @@
+inside users.js
+
+import {Outlet , useSearchParams} from "react-router-dom"
+
+
+const users = () => {
+    const [searchParams , searchParams] = useParams()
+    const showActiveUsers = searchParams.get('filter') === 'active'
+    return(
+        <div>
+            <button onClick={()=>setSearchParams({filter:'active'})}>Active users</button>
+            <button onClick={()=>setSearchParams({})}> Resert filter</button>
+        {showActiveUsers ? <h2>showing active users</h2> : <h2>showing all users</h2>}
+        
+        </div>
+    )
+}

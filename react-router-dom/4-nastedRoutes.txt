@@ -2,7 +2,7 @@ inside App.js
 
 
     <Routes>
-        <Route to='/products' element={<Productss/>}>
+        <Route to='products' element={<Productss/>}>
             <Route index  element={<something/>}/>
             <Route to='something' element={<something/>}/>
         </Route>

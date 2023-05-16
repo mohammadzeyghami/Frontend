@@ -1,0 +1,10 @@
+<Link to='new'></Link>  ===   <Link to='/product/new'></Link>
+
+
+                        but 
+
+
+if   <Link to='/new'></Link>
+
+
+            it goes to  :300/new
