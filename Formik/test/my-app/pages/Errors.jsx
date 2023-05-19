@@ -2,7 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 
 const initialValues = {
-  name: "Vishmas",
+  name: "mohammad",
   email: "",
   channel: "",
 };
@@ -15,7 +15,7 @@ const validate = (values) => {
   if (!values.name) {
     errors.name = "Required";
   }
-  if (!values.name) {
+  if (!values.email) {
     errors.email = "Required";
   }
   if (!values.channel) {
@@ -35,7 +35,10 @@ const staticForm = () => {
   console.log(formik.values);
   return (
     <div className="flex h-[100vh] justify-center items-center">
-      <form className="flex flex-col mx-auto bg-white w-[500px]">
+      <form
+        className="flex flex-col mx-auto bg-white w-[500px]"
+        onSubmit={formik.handleSubmit}
+      >
         <label htmlFor="name">name</label>
         <input
           type="text"
@@ -45,8 +48,9 @@ const staticForm = () => {
           onChange={formik.handleChange}
           value={formik.values.name}
         />
+        {formik.errors.name ? <div>{formik.errors.name}</div> : null}
 
-        <label htmlFor="username">email</label>
+        <label htmlFor="email">email</label>
         <input
           type="email"
           id="email"
@@ -55,7 +59,7 @@ const staticForm = () => {
           onChange={formik.handleChange}
           value={formik.values.email}
         />
-
+        {formik.errors.email ? <div>{formik.errors.email}</div> : null}
         <label htmlFor="password">password</label>
         <input
           type="password"
@@ -65,7 +69,7 @@ const staticForm = () => {
           onChange={formik.handleChange}
           value={formik.values.password}
         />
-
+        {formik.errors.password ? <div>{formik.errors.password}</div> : null}
         <button
           type="submit"
           className="mt-[30px] mx-auto bg-gray-500 rounded-[5px] w-[150px]"

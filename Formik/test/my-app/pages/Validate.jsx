@@ -1,35 +1,16 @@
 import React from "react";
 import { useFormik } from "formik";
 
-const initialValues = {
-  name: "Vishmas",
-  email: "",
-  channel: "",
-};
-const onSubmit = (values) => {
-  console.log("form Data", values);
-};
-const validate = (values) => {
-  let errors = {};
-
-  if (!values.name) {
-    errors.name = "Required";
-  }
-  if (!values.name) {
-    errors.email = "Required";
-  }
-  if (!values.channel) {
-    errors.channel = "Required";
-  }
-
-  return errors;
-};
-
-const staticForm = () => {
+const Validate = () => {
   const formik = useFormik({
-    initialValues,
-    onSubmit,
-    validate,
+    initialValues: {
+      name: "",
+      email: "",
+      channel: "",
+    },
+    onSubmit: (values) => {
+      console.log("form Data", values);
+    },
   });
 
   console.log(formik.values);
@@ -77,4 +58,4 @@ const staticForm = () => {
   );
 };
 
-export default staticForm;
+export default Validate;
