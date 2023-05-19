@@ -1,37 +1,56 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useFormik } from "formik";
 
 const staticForm = () => {
-  const form = useForm();
-  const { register } = form;
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      channel: "",
+    },
+    onSubmit: (values) => {
+      console.log("form Data", values);
+    },
+  });
+
+  console.log(formik.values);
   return (
     <div className="flex h-[100vh] justify-center items-center">
-      <form className="flex flex-col mx-auto w-[500px]">
-        <label htmlFor="username">Username</label>
+      <form className="flex flex-col mx-auto bg-white w-[500px]">
+        <label htmlFor="name">name</label>
         <input
           type="text"
-          id="username"
-          name="username"
+          id="name"
+          name="name"
           className="border-[2px]"
+          onChange={formik.handleChange}
+          value={formik.values.name}
         />
 
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username">email</label>
         <input
-          type="text"
-          id="username"
-          name="username"
-          className="border-[2px]"
+          type="email"
+          id="email"
+          name="email"
+          className="border-[2px] "
+          onChange={formik.handleChange}
+          value={formik.values.email}
         />
 
-        <label htmlFor="username">Username</label>
+        <label htmlFor="password">password</label>
         <input
-          type="text"
-          id="username"
-          name="username"
+          type="password"
+          id="password"
+          name="password"
           className="border-[2px]"
+          onChange={formik.handleChange}
+          value={formik.values.password}
         />
 
-        <button className="mt-[30px] mx-auto bg-gray-500 rounded-[5px] w-[150px]">
+        <button
+          type="submit"
+          className="mt-[30px] mx-auto bg-gray-500 rounded-[5px] w-[150px]"
+        >
           Submit
         </button>
       </form>
