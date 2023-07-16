@@ -8,7 +8,7 @@ const FormYoutube = () = > {
     const formik = useFormik({
         name : '' , 
         email : '' ,
-        channel : ''
+        channel : '',
     })
 
     return(
@@ -30,9 +30,16 @@ const FormYoutube = () = > {
     )
 }
 
+1- import useFormik()
 
-1- managing form state 
+2- const formik = seFormik({
+        name : '' , 
+        email : '' ,
+        channel : '',
+    })
 
-2- handling from submission
+ -managing form state 
 
-3- Validation and error messages
+ -handling from submission
+
+ -Validation and error messages

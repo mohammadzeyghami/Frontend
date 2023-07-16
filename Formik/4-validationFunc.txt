@@ -60,3 +60,24 @@ const FormYoutube = () = > {
 }
 
 
+1-validate  
+
+validate:values => {
+        let errors = {}
+
+        if (!values.name){
+            errors.name = 'Required'
+        }
+        if(!values.email){
+            errors.email = 'required'
+        }
+        if(!values.channel){
+            erros.channel='required'
+        }
+
+        return erros
+       }
+
+2-show error 
+
+ {formik.error.channel? <div className='error'>{formik.errors.channel}</div> : null }

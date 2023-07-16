@@ -11,7 +11,7 @@ const FormYoutube = () = > {
         lastName:'',
         Channel:'',
        },
-       onsubmit : values =>{
+       onSubmit : values =>{
         console.log('Form data' , values)
        }
     })
@@ -36,8 +36,13 @@ const FormYoutube = () = > {
 }
 
 
-1- managing form state 
+1- set onChnage(formik.handelChange) 
 
-2- handling from submission
+2- set value={formik.values.name}
 
 3- Validation and error messages
+
+4- submit  <form onSubmit={formik.handleSubmit()}></form>
+ onSubmit : values =>{
+        console.log('Form data' , values)
+       }
