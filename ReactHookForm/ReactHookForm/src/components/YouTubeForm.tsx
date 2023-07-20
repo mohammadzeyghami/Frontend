@@ -34,7 +34,12 @@ const YouTubeForm = () => {
         <input
           type="email"
           className="border-[1px]"
-          {...register("email")}
+          {...register("email", {
+            required: {
+              value: true,
+              message: "email is required",
+            },
+          })}
           id="email"
           name="email"
         />
