@@ -5,14 +5,18 @@ const fetchSuperHeros = () => {
   return axios.get("http://localhost:4000/superheroes");
 };
 export const RQSuperHeroesPage = () => {
-  const { isLoading, data, isError, error } = useQuery(
+  const { isLoading, data, isError, error, refetch } = useQuery(
     "super-heros",
     fetchSuperHeros,
     {
-      refetchOnMount: true,
       // defalut : true
+      refetchOnMount: true,
+      // defaut true
       refetchOnWindowFocus: true,
-    }
+      //default true
+      enabled: false,
+    },
+    {}
   );
 
   if (isError) {
@@ -23,6 +27,7 @@ export const RQSuperHeroesPage = () => {
   }
   return (
     <div>
+      <button onClick={refetch}>refetch</button>
       {data?.data.map((item) => (
         <div>{item.name}</div>
       ))}
