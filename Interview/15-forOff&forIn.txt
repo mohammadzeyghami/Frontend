@@ -1,0 +1,11 @@
+we use both forOf forIn on arrays 
+
+test = [1,2,3,4,5]
+
+for(item of test ){
+    console.log(item)    inja miad khode item ro mide 
+}
+
+for(item in test ){
+    console.log(item)    inja miad index ro mide  
+}
