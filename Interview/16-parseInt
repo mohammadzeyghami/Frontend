@@ -1,0 +1,1 @@
+let result = number.parsInt('2022 year')  // parse int kollan miad ta zamani ke number bshe log mide 
