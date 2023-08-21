@@ -12,10 +12,20 @@ inside your page
 
 import {useQuery} from "react-query"
 
+const fetchDatas=()=>{
+        return axios.get('http://localhost:4000/superheros')
+    }
+
 
 const x =() =>{
-    const {data , isLoading,error , isError} = useQuery("super-heros",()=>{
-        return axios.get('http://localhost:4000/superheros')})
+    const {data , isLoading,error , isError} = useQuery("super-heros",fetchDatas,{
+        cachTime:5000, default : 5min
+        staleTime:30000, default : 0,
+        refetchOnMounth:true,
+        refetchOnWindowFocus:true,   refetch when data update
+        refetchInterval:2000
+        
+        })
 
 
     if (isloading) {
@@ -31,3 +41,90 @@ const x =() =>{
     }
     return<div>hey</div>
 }
+
+
+
+
+
+
+
+fecth with click 
+
+
+
+const x =() =>{
+    const {data , isLoading,error , isError , refetch, isfeaching} = useQuery("super-heros",fetchDatas,{
+        
+        enable:false
+        
+        })
+
+
+    if (isloading || isfeaching) {
+        return <div>loading ...</div>
+    }
+
+
+    if (error) {
+        return <div>{error}</div>
+    }
+    if (isError) {
+        return <div>{error.message}r</div>
+    }
+    return<button onClick(refetch)>hey</button>
+}
+
+
+
+
+
+
+
+
+sucess and fail 
+
+
+
+
+const x =() =>{
+
+    const Onsucess = () =>{
+        console.log("s")
+    }
+     const Onsucess = () =>{
+        console.log("f")
+    }
+
+    const {data , isLoading,error , isError , refetch, isfeaching} = useQuery("super-heros",fetchDatas,{
+        
+        sucess:Onsucess,
+        fail:onFail,
+        
+        })
+
+
+    if (isloading || isfeaching) {
+        return <div>loading ...</div>
+    }
+
+
+    if (error) {
+        return <div>{error}</div>
+    }
+    if (isError) {
+        return <div>{error.message}r</div>
+    }
+    return<button onClick(refetch)>hey</button>
+}
+
+
+
+
+
+
+
+
+
+
+
+data ransformation
