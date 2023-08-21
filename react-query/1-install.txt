@@ -1,0 +1,33 @@
+npm i react-query
+
+import {queryClientProvider , queryClient} from "react-query"
+
+in app.js 
+const queryClient = new QueryClient()
+
+<QueryClientProvider client={queryClient}></QueryClientProvider>
+
+
+inside your page 
+
+import {useQuery} from "react-query"
+
+
+const x =() =>{
+    const {data , isLoading,error , isError} = useQuery("super-heros",()=>{
+        return axios.get('http://localhost:4000/superheros')})
+
+
+    if (isloading) {
+        return <div>loading ...</div>
+    }
+
+
+    if (error) {
+        return <div>{error}</div>
+    }
+    if (isError) {
+        return <div>{error.message}r</div>
+    }
+    return<div>hey</div>
+}

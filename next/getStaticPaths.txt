@@ -3,7 +3,7 @@ what is StaticPaths ?
 when you create paths you can create dynamic paths with [name] 
 
 next pre-render files and send they to server side but what can do  when you dont know 
-homw many path do you have ???
+how many path do you have ???
 
 getStaticPaths give all path route pages to next and next create that pages with getStaticProps 
 
