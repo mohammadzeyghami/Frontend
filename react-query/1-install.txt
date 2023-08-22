@@ -127,4 +127,40 @@ const x =() =>{
 
 
 
-data ransformation
+data ransformation 
+
+
+const x =() =>{
+
+    const Onsucess = () =>{
+        console.log("s")
+    }
+     const Onsucess = () =>{
+        console.log("f")
+    }
+    
+    const {data , isLoading,error , isError , refetch, isfeaching} = useQuery("super-heros",fetchDatas,{
+        
+        sucess:Onsucess,
+        fail:onFail,
+        select:(data)=>{
+          const superheroNames = data.data.map((hero)=>hero.name)  
+          return superheroNames
+        }
+        
+        })
+
+
+    if (isloading || isfeaching) {
+        return <div>loading ...</div>
+    }
+
+
+    if (error) {
+        return <div>{error}</div>
+    }
+    if (isError) {
+        return <div>{error.message}r</div>
+    }
+    return<button onClick(refetch)>hey</button>
+}
