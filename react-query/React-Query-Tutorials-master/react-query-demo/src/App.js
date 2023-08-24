@@ -12,6 +12,7 @@ import { DependentQueriesPage } from "./components/DependentQueries.page";
 import { PaginatedQueriesPage } from "./components/PaginatedQueries.page";
 import { InfiniteQueriesPage } from "./components/InfiniteQueries.page";
 
+// const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts');
 const queryClient = new QueryClient();
 
 function App() {
